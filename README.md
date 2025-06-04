@@ -149,6 +149,15 @@ JAX Function (dmin) → jax2tf.convert → TensorFlow SavedModel → C++ TensorF
 - `single_compare.png` - Gradient/Hessian validation plot
 - `err_hist_log.png` - Error distribution histogram
 
+## Validation Results
+
+### JAX vs Finite Difference Comparison
+![Validation Plot](single_compare.png)
+
+Numerical validation shows excellent agreement between JAX automatic differentiation and finite differences:
+- **Gradient error**: ~10⁻³
+- **Hessian error**: ~10⁻²
+
 ## Applications
 
 - **Contact mechanics**: Beam-to-beam interaction analysis
